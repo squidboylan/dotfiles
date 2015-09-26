@@ -16,7 +16,9 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-exec `~/bin/startup.sh`
+if [ -f ~/bin/startup.sh ]; then
+    exec `~/bin/startup.sh`
+fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
