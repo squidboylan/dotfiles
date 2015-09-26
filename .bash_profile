@@ -1,6 +1,8 @@
 #
 # ~/.bash_profile
 #
-exec `~/bin/startup.sh`
+if [ -f ~/bin/startup.sh ] ; then
+    exec `~/bin/startup.sh`
+fi
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
