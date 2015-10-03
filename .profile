@@ -16,7 +16,7 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-if [-f ~/bin/startup.sh ]; then
+if [ -f ~/bin/startup.sh ]; then
     exec `~/bin/startup.sh`
 fi
 
