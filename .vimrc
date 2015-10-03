@@ -69,12 +69,12 @@ if has ("autocmd")
     "Shell stuff sets autoindention details, the bang line, and saves the
     "file as an executable.
     augroup shell
-        autocmd BufNewFile *.sh 0put ='#!/bin/sh'
+        autocmd BufNewFile *.sh 0put ='#!/bin/bash'
         autocmd FileType sh
                      \ set tabstop=4 shiftwidth=4 softtabstop=4
         autocmd FileType sh
                      \ set expandtab smartindent
-        autocmd BufWritePost *.sh !chmod 744 %
+   "     autocmd BufWritePost *.sh !chmod 744 %
     augroup END
 
     "When editing text documents I dont need the line numbers and text
