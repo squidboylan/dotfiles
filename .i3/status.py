@@ -8,7 +8,8 @@ black       = "#2c2836"
 darkblack   = "#73707e"
 red         = "#bb7473"
 darkred     = "#cf9fa4"
-green       = "#68b782"
+#green       = "#68b782"
+green       = "#00ff00"
 darkgreen   = "#9acbad"
 yellow      = "#abb773"
 darkyellow  = "#c5cba4"
@@ -62,7 +63,7 @@ status.register("pulseaudio",
 
 status.register("disk", path="/", format="{avail}GB")
 
-status.register("mem_bar")
+status.register("mem_bar", multi_colors=True)
 
 status.register("cpu_usage_graph", start_color=green, end_color=red)
 
