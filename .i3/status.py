@@ -64,4 +64,6 @@ status.register("mem_bar")
 
 status.register("cpu_usage_graph", start_color=green, end_color=red)
 
+status.register("temp", alert_temp=60)
+
 status.run()
