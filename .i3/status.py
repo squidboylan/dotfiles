@@ -60,6 +60,8 @@ status.register("pulseaudio",
         color_muted=red,
         color_unmuted=white,)
 
+status.register("disk", path="/", format="{avail}GB")
+
 status.register("mem_bar")
 
 status.register("cpu_usage_graph", start_color=green, end_color=red)
