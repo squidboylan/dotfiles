@@ -55,7 +55,6 @@ if has ("autocmd")
                      \ set tabstop=2 shiftwidth=2 softtabstop=2
         autocmd FileType ruby
                      \ set expandtab smartindent
-        autocmd BufWritePost *.rb !chmod 744 %
     augroup END
 
     "Autocommands to set python indentation rules. 4 space tabs per PEP8.
@@ -74,7 +73,6 @@ if has ("autocmd")
                      \ set tabstop=4 shiftwidth=4 softtabstop=4
         autocmd FileType sh
                      \ set expandtab smartindent
-   "     autocmd BufWritePost *.sh !chmod 744 %
     augroup END
 
     "When editing text documents I dont need the line numbers and text
